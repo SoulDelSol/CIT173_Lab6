@@ -1,0 +1,111 @@
+    1  ls
+    2  mkdir ~/CIT173_Lab4
+    3  ls /dev
+    4  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    5  head -c 1024 /dev/random > ~/CIT173_Lab4/my-random-data.txt
+    6  lsmod > ~/CIT173_Lab4/my-modules-1.txt
+    7  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+    8  sudo modprobe nfs
+    9  lsmod > ~/CIT173_Lab4/my-modules-2/txt
+   10  lsmod > ~/CIT173_Lab4/my-modules-2.txt
+   11  sudo modprobe -r nfs
+   12  lsmod > ~/CIT173_Lab4/my-modules-3.txt
+   13  sudo gdisk
+   14  ls -al /dev
+   15  ls -al /dev > ~/CIT173_Lab4/my-new-dev-nodes.txt
+   16  sudo mkfs.ext4 /dev/sdb1
+   17  sudo mkfs.ext4 /dev/sdb2
+   18  sudo mkdir /mnt/data
+   19  sudo mkdir /mnt/backup
+   20  mount
+   21  sudo mount /dev/sdb1 /mnt/data
+   22  sudo mount /dev/sdb2 /mnt/backup
+   23  mount
+   24  mount > ~/CIT173_Lab4/my-mounts.txt
+   25  df
+   26  df > ~/CIT173_Lab4/my-disk-usage.txt
+   27  sudo umount /dev/sdb1 /dev/sdb2
+   28  sudo dd if=/dev/sdb of =~/CIT173_Lab4/gpt.bin bs=512 count=34
+   29  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+   30  ls
+   31  clear
+   32  mkdir ~/CIT173_Lab5
+   33  ls
+   34  clear
+   35  lkj
+   36  clear
+   37  ls
+   38  nano
+   39  nanoi
+   40  nano
+   41  sudo nano /etc/fstab
+   42  reboot
+   43  mount
+   44  mount > ~/CIT173_Lab5/my-mounts.txt
+   45  ls
+   46  ls ~/CIT173_Lab5
+   47  cp /etc/fstab ~/CIT173_Lab5/my-fstab.txt
+   48  ls ~/CIT173_Lab5
+   49  ls ~/CIT173_Lab5/my-fstab.txt
+   50  cat ~/CIT173_Lab5/my-fstab.txt
+   51  man dd
+   52  ls /dev/random
+   53  cat /dev/random
+   54  man
+   55  dd
+   56  man dd
+   57  dd if=/dev/random of=/mnt/data/data_file1.dat bs=1000
+   58  sudo dd if=/dev/random of=/mnt/data/data_file1.dat bs=1000
+   59  cat /mnt/data/data_file1.dat
+   60  sudo dd if=/dev/random of=/mnt/data/data_file2.dat bs=1000
+   61  cat /mnt/data/data_file2.dat
+   62  clear
+   63  sudo dd if=/dev/random of=/mnt/backup/backup_file1.dat bs=1000
+   64  sudo dd if=/dev/random of=/mnt/backup/backup_file2.dat bs=1000
+   65  ls /mnt/data
+   66  ls /mnt/backup
+   67  man -iiname
+   68  man -iname
+   69  man iname
+   70  man name
+   71  man mane
+   72  mkdir ~/CIT173_Lab6
+   73  ls
+   74  sudo groupadd actors
+   75  sudo groupadd directors
+   76  sudo groupadd producers
+   77  ls -al *CIT
+   78  man *
+   79  ls -al *CIT
+   80  clear
+   81  sudo useradd -m mhamill
+   82  sudo passwd mhamill
+   83  clear
+   84  sudo usermod -c "Mark Hamill" mhamill
+   85  sudo usermod -a -G actors mhamill
+   86  sudo useradd -m hford
+   87  sudo passwd hford
+   88  clear
+   89  sudo usermod -c "Harrison Ford" hford
+   90  sudo usermod -a -G actors hford
+   91  sudo useradd -m cfisher
+   92  sudo passwd cfisher
+   93  clear
+   94  sudo usermod -c "Carrie Fisher" cfisher
+   95  sudo usermod -a -G actors cfisher
+   96  sudo useradd -m glucas
+   97  sudo usermod -c "George Lucas" glucas
+   98  sudo usermod -a -G directors glucas
+   99  sudo usermod -a -G producers glucas
+  100  sudo useradd -m gkurtz
+  101  sudo usermod -c "Gary Kurtz" gkurtz
+  102  sudo usermod -a -G producers gkurtz
+  103  man usermod
+  104  cp /etc/passwd ~/CIT173_Lab6/
+  105  cp /etc/groups ~/CIT173_Lab6/
+  106  cat /etc/groups
+  107  ls /etc/
+  108  cp /etc/group ~/CIT173_Lab6/
+  109  history
+  110  history 37
+  111  history > ~/CIT173_Lab6/ex1-command-history.txt
